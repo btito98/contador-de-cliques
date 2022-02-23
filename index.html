@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+         let clq = 0
+      function contar(){        
+       
+        let count = clq
+          
+            document.getElementById("result").innerHTML = `Você deu ${count} cliques`
+            return clq++
+        }
+
+      function limpar(){       
+           location.reload()     
+      }  
+    
+    
+    </script>  
+
+</head>
+<body>
+ <div class="container">
+<h1 class="title">Contador de cliques <img src="./img/png-clipart-cursor-cursor-removebg-preview.png" alt="" srcset="" class="img"></h1>
+<div class="btns">
+
+<button class="bt1" onclick="contar()">Clique para contar</button>
+
+<button class="bt2" onclick="limpar()">Zerar Contador</button>
+</div>
+
+<div id="result">    
+</div>
+</div>
+
+
+
+
+
+
+
+  
+</body>
+</html>
